@@ -1,0 +1,21 @@
+{
+  "name": "tina-turborepo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "npm@8.19.2"
+}
