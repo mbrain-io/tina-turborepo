@@ -1,0 +1,36 @@
+{
+    "name": "mylib",
+    "version": "0.1.0",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.umd.js",
+    "jsnext:main": "./dist/index.es.js",
+    "module": "./dist/index.es.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite dev",
+        "build": "tsc && vite build",
+        "build:watch": "tsc && vite build -w"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.11",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@vitejs/plugin-react": "^3.1.0",
+        "typescript": "^5.0.2",
+        "vite": "^4.2.0",
+        "vite-plugin-dts": "^2.1.0"
+    }
+}
