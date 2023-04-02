@@ -14,7 +14,7 @@ const EXTERNAL = Object.keys(pkg.peerDependencies); // External packages will no
 export default defineConfig({
     server: {
         port: PORT,
-        open: true, // Open browser on run
+        open: false, // Open browser on run
     },
     plugins: [
         react({
